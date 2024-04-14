@@ -1,0 +1,98 @@
+/* Form.module.css */
+.form-container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form-container h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+}
+
+.form-container input,
+.form-container select {
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-input {
+    display: none;
+    /* Hide the actual checkbox */
+}
+
+.checkbox-custom {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid #3498db;
+    /* Blue border */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.checkbox-custom::before {
+    content: '';
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.checkbox-custom.checked::before {
+    opacity: 1;
+    border-color: #0dca36;
+    /* White color for the checkmark */
+}
+
+.checkbox-label {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.submit-button {
+    background-color: #3498db;
+    /* Blue background color */
+    color: #fff;
+    /* White text color */
+    border: none;
+    padding: 14px 20px;
+    /* Increased padding for the button */
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+    /* Darker blue on hover */
+}
