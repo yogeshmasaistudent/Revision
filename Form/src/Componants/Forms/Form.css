@@ -1,0 +1,26 @@
+.form-container{
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: solid 2px #eb4747;
+    border-radius: 5px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    margin: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error{
+    color: red;
+}
